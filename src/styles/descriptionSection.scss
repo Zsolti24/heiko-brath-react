@@ -1,0 +1,138 @@
+@use './style.scss';
+
+.imageDescriptionSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+.imageDescription{
+    display: flex;
+    justify-content: space-between;
+}
+.Description{
+    color: #FFFFFF;
+}
+.Descriptionh2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: left;
+    margin-top: 140px;
+    
+}
+.Descriptionh3{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.78px;
+    text-align: left;
+    
+}
+.DescriptionText{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 40px;
+    width: 427px;
+}
+p{
+    margin-top: 10px;
+}
+.DescriptionButtons{
+    display: flex;
+    justify-content: left;
+    gap: 19px;
+    margin-top: 60px;
+}
+.DescriptionButton{
+    width: 174px;
+    height: 47px;
+    background-color: style.$brandPrimary;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}   
+
+.imageGalerySide{
+    width: 537px;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.imgGaleryOptions{
+    display: flex;
+    justify-content: center;
+    width: 537px;
+    height: 200px;
+    gap: 10px;
+    margin-top: 10px;
+}
+.chosenImage{
+    object-fit: cover;
+    width: 537px;
+    height: 326px;
+}
+.smallpic{
+    width: 167px;
+    height: 167px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1110px) {
+    
+.imageDescriptionSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 0px;
+    margin-bottom: 50px;
+}
+.Description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    // width: 400px;
+}
+.imageDescription{
+    width: 100%;
+    justify-content: center;
+}.Description{
+    width: 300px;
+}
+.Descriptionh2{
+    text-align: center;
+    margin-top: 30px;
+}
+.Descriptionh3{
+    text-align: center;
+}
+.DescriptionText{
+    text-align: center;
+}
+.DescriptionButtons{
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    margin-top: 60px;
+}
+.imageGalerySide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+}   
