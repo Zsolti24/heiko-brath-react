@@ -10,10 +10,14 @@ export default function NavBar() {
         const logo = document.querySelector('.imgLogo');
         logo.classList.add('spin');
         if(currentMode==="dark"){
-            currentMode="light";
+            document.body.classList.add('light-mode');
+            currentMode = "light";
+            console.log("as");
         }
         else{
-            currentMode="dark";
+            document.body.classList.remove('light-mode');
+            console.log("dd");
+            currentMode = "dark";
         }
 
         setTimeout(function () {

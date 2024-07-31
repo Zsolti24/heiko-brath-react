@@ -137,16 +137,19 @@ export default function RecordSection() {
                     </SwiperSlide>
                 </Swiper>
                 <div className='swpBtns'>
-                <div className='swpBtnsContainer'>
-                    <div className="swiper-button-next SWBT">
-                        <img src={require("../images/left.png")} alt="" className='NextBTN'/>
+                    <div className='swpBtnsContainer'>
+                        <div className="swiper-button-next SWBT">
+                            <img src={require("../images/left.png")} alt="" className='NextBTN'/>
+                        </div>
+                        <div className="swiper-button-prev SWBT">
+                            <img src={require("../images/right.png")} alt="" className="PrevBTN" />
+                        </div>
                     </div>
-                    <div className="swiper-button-prev SWBT">
-                        <img src={require("../images/right.png")} alt="" className="PrevBTN" />
-                    </div>
-                </div>
                 </div>
             </div>
+            <div class="buttonContainer">
+            <div class="rdButton">Alle Berichte</div>
+        </div>
         </div>
     </div>
   )

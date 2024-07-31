@@ -79,6 +79,18 @@
     height: 17px;
   }
 
+  .light-mode{
+    .imageSliderTextH1{
+      color: #000000;
+    }
+    .imageSliderText{
+    color: #000000;
+    }
+    .imageSliderTextContainer{
+      background-color: #ffffff4d;
+    }
+}
+
   @media only screen and (max-width: 1200px) {
     .swiperContainer{
         padding-top: 110px;

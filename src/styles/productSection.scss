@@ -75,7 +75,17 @@ padding-top: 20px;
     object-fit: cover;
     height: 243px;
 }
-
+.light-mode{
+    .productTitle{
+        color: #000000;
+    }
+    .productSecondTitle{
+        color: #000000;
+    }
+    .productDescription{
+        color: #000000;
+    }
+}
 
 @media only screen and (max-width: 1110px) {
     .productImages{

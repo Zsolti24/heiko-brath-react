@@ -87,7 +87,14 @@ p{
     object-fit: cover;
     cursor: pointer;
 }
-
+.light-mode{
+    .Description{
+        color: #000000;
+    }
+    .DescriptionButton{
+        color: #FFFFFF;
+    }
+}
 
 
 @media only screen and (max-width: 1110px) {

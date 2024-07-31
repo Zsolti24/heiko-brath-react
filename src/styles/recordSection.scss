@@ -30,7 +30,7 @@
     text-align: left;
     color: #FFFFFF;
 }
-.redButton{
+.rdButton{
 width: 174px;
 height: 47px;
 background-color: style.$brandPrimary;
@@ -149,7 +149,7 @@ cursor: pointer;
     line-height: 24px;
     width: 300px;
 
-}í
+}
 .sender{
     color: #FFFFFF;
     font-size: 12px;
@@ -240,48 +240,6 @@ cursor: pointer;
     gap: 40px;
 }
 
-.message{
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 18px;
-    color: #FFFFFF;
-    width: 250px;
-}
-.messageLarge{
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    width: 300px;
-
-}
-.sender{
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14.06px;
-    opacity: 0.46;
-}
-.senderLarge{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.75px;
-    margin-top: 20px;
-}
-.textLarge{
-    // position: absolute;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 18.75px;
-}
-
-.card.large {
-    position: relative;
-    width: 429px;
-    height: 414px;
-    color: #FFFFFF;
-    background-color: #2e2c2c90;
-    gap: 15px;
-}
 .znak{
     position: absolute;
     bottom: -20px;
@@ -312,6 +270,35 @@ cursor: pointer;
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
+}
+
+.light-mode{
+    .card.large {
+        color: #000000;
+    }
+    .message{
+        color: #000000;
+    }
+    .sender{
+        color: #000000;
+    }
+    .medalText{
+        color: #000000;
+    }
+    .medalComponentText{
+        color: rgb(71, 70, 70)82;
+    }
+    
+    .Recommendation{
+        color: #000000;
+    }
+    .RecommendationTitle{
+        color: #000000;
+    }
+    .otherSideText{
+
+        color: #000000;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -365,6 +352,9 @@ cursor: pointer;
         width: 200px;
         height: 650px;
         padding-top: 550px;
+    }
+    .rdButton{
+        margin-top: 70px;
     }
   }
 
