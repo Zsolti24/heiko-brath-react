@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import NavBar from "./components/NavBar";
 import ImageSliderSection from "./sections/imageSliderSection.js";
 import DescriptionSection from "./sections/Description.js";
@@ -13,7 +13,6 @@ import Footer from "./components/Footer.js";
 function App() {
 
   var poppedUp = false;
-
 
   let accumulatedScrollTime = 0;
   let lastScrollEventTime = null;
@@ -30,7 +29,7 @@ function App() {
     lastScrollEventTime = currentTime;
   
     if (accumulatedScrollTime >= SCROLL_THRESHOLD) {
-      if(popped == false){
+      if(popped === false){
           popped = true;
           poppedUp = true;
           document.body.style.overflow="hidden";

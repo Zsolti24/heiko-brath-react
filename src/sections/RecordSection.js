@@ -1,6 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Mousewheel, Keyboard, EffectCoverflow  } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function RecordSection() {
+
   return (
 <div className="recordsSection">
         <div className="recordContainer">
@@ -53,36 +60,33 @@ export default function RecordSection() {
             </div>
             <div className="Recommendation">Empfehlungs</div>
             <div className="RecommendationTitle">Was die Leute über uns sagen</div>
-            
-            <div className="carousel-container">
-                <button id="prev" className="arrow"><img src={require("../images/left.png")}  className="ArrowPic" alt="" /></button>
-                <div className="carousel">
-                    <div className="card">
-                        <div className="message">Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.</div>
-                        <div className="sender">Maria Kartofeln</div>
-                    </div>
-                    <div className="card large">
-                        <img src={require("../images/grillkurs_icon.png")} alt="" />
-                        <img src={require("../images/zvezdice.png")} alt="" />
-                        <div className="messageLarge">Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna  Luftballons Ut Turnbeutel nostrud exercitation ullamco .</div>
-                        <div className="senderLarge">Halling Tobias</div>
-                        <div className="textLarge">Koch</div>
-                        <img src={require("../images/znak.png")} alt="" className="znak" />
-                    </div>
-                    <div className="card">
-                        <div className="message">Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</div>
-                        <div className="sender">Rene Weinstein</div>
-                    </div>
-                </div>
-                <button id="next" className="arrow"><img src={require("../images/right.png")} className="ArrowPic" alt="" /></button>
+            <div className='swipers'>
+            <Swiper
+                // cssMode={true}
+                modules={[Navigation, Mousewheel, Keyboard]}
+       
+                spaceBetween={50}
+                loop={true}
+                slidesPerView={3}
+                navigation
+                ={{
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }}
+                pagination={{ clickable: true }}
+                simulateTouch={true}
+                >
+                <SwiperSlide>Slide 1</SwiperSlide>
+                <SwiperSlide>Slide 2</SwiperSlide>
+                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide>Slide 1</SwiperSlide>
+                <SwiperSlide>Slide 2</SwiperSlide>
+                <SwiperSlide>Slide 3</SwiperSlide>
+                </Swiper>
+                <div className="swiper-button-next SWBT">Next</div>
+                <div className="swiper-button-prev SWBT">Prev</div>
             </div>
-            <div className="buttonContainer">
-                <div className="redButton">Alle Berichte</div>
-            </div>
-
-
         </div>
     </div>
-
   )
 }

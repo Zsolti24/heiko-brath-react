@@ -2,6 +2,27 @@ import React, { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react'
 
 export default function NavBar() {
+    var time = false;
+    var currentMode = "dark";
+    function handleThemeChange(){
+    if (time===false){
+        time=true;
+        const logo = document.querySelector('.imgLogo');
+        logo.classList.add('spin');
+        if(currentMode==="dark"){
+            currentMode="light";
+        }
+        else{
+            currentMode="dark";
+        }
+
+        setTimeout(function () {
+            logo.classList.remove('spin');
+            time=false;
+        }, 2500);
+    }
+    
+}
 
     const [sideBarActiveVar, setSideBarActiveVar] = useState(false);
     function hamburgerHandler(){
@@ -17,7 +38,7 @@ export default function NavBar() {
         <div className="navBarContainer">
             <div className="navTop">
                 <div className="navTopContainer">
-                    <img src={require('../images/logo.png')} alt="logo" className="imgLogo" />
+                    <img src={require('../images/logo.png')} alt="logo" className="imgLogo" onClick={handleThemeChange} />
                     <div className="navOptions">
                         <div className="navOption">Die Metzgerei</div>
                         <div className="navOption">Dry Aged</div>
