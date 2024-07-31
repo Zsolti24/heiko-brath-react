@@ -1,0 +1,135 @@
+// @use './style.scss';
+
+.swiperContainer{
+    position: relative;
+    width: 100%;
+    padding-top: 123px;
+}
+.swiperPic{
+    object-fit: cover;
+    height: 679px;  
+    width: 100%;
+}
+.imageSliderTextContainer{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 629px;
+    height: 348px;
+    background-color: #0000004D;
+  }
+  .imageSliderTextLocation{
+    margin-left: 250px;
+    height: 348px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    gap: 20px;
+  }
+  .imageSliderTextH1{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 44.53px;
+  }
+  .imageSliderText{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+  }
+  .swiperButtons{
+    position: absolute;
+    bottom: 40px;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .swiperButtonsContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+  .swiper-button-next-custom{
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+  }
+  .swiper-button-prev-custom{
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+  }
+  .swiper-pagination-custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .custom-pagination-bullet{
+    display: flex;
+
+    width: 17px;
+    height: 17px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .swiperContainer{
+        padding-top: 110px;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 1000px) {
+    .swiperPic{
+        height: 276px;
+    }
+    .swiperButtons{
+        display: none;
+    }
+    .imageSliderSection{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: #00000000;
+        gap: 0px;
+        margin-bottom: 0px;
+    }
+    .imageSliderTextContainer{
+        position: unset;
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        width: 100%;
+        height: 348px;
+        background-color: #00000000;
+        transform: translateY(0);
+      }
+      .imageSliderTextLocation{
+        margin-left: 0px;
+        height: 348px;
+        color: #FFFFFF;
+        width: 400px;
+        text-align: center;
+      }
+      .imageSliderTextH1{
+        text-align: center;
+    }
+    .imageSliderText{
+        text-align: center;
+
+      }
+
+
+
+
+}
