@@ -5,6 +5,7 @@ import './styles/style.scss';
 import './styles/navBar.scss';
 import './styles/imageSliderSection.scss';
 import './styles/descriptionSection.scss';
+import './styles/reservationSection.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
