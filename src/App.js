@@ -5,6 +5,7 @@ import DescriptionSection from "./sections/Description.js";
 import ReservationSection from "./sections/ReservationSection.js";
 import ProductSection from "./sections/ProductSection.js";
 import SpicesSection from "./sections/SpicesSection.js";
+import DeliverySection from "./sections/DeliverySection.js";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <ReservationSection />
     <ProductSection />
     <SpicesSection />
+    <DeliverySection />
   </>
   )
 }

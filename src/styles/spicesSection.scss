@@ -1,0 +1,103 @@
+@use './style.scss';
+
+
+.spicesSection{
+    background-color: style.$brandPrimary;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    position: relative;
+}
+.spicesImageSide{
+    width: 50%;
+}
+
+.spicesImage{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.spicesTextSide{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+.spicesTextContainer{
+    width: 440px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+}
+.spicesTexth1{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.spicesh2{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.spicesDescription{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+    
+    .spicesImageSide{
+        width: 100%;
+    }
+
+    .spicesImage{
+        width: 100%;
+        height: 100%;
+    }
+    .spicesTextSide{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    .spicesTextContainer{
+        margin-left: 0px;
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        gap: 30px;
+    }
+    .spicesTexth1{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .spicesh2{
+        color: #FFFFFF;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    .spicesDescription{
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    }
+    

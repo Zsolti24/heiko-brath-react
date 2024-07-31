@@ -12,6 +12,7 @@
     justify-content: space-between;
 }
 .Description{
+    // position: relative;
     color: #FFFFFF;
 }
 .Descriptionh2{
@@ -34,11 +35,14 @@
     font-weight: 300;
     line-height: 24px;
     text-align: left;
+    width: 100%;
     margin-top: 40px;
     width: 427px;
 }
 p{
     margin-top: 10px;
+    // width: 300px;
+    // text-align: center;
 }
 .DescriptionButtons{
     display: flex;
@@ -89,6 +93,7 @@ p{
 @media only screen and (max-width: 1110px) {
     
 .imageDescriptionSection{
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
@@ -136,3 +141,24 @@ p{
     margin-bottom: 0px;
 }
 }   
+@media only screen and (max-width: 600px) {
+    .chosenImage{
+        width: 336px;
+        height: 290px;
+    }
+    .smallpic{
+        width: 115px;
+        height: 73px;
+    }
+    .productDescription{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        width: 300px;
+    }
+}
