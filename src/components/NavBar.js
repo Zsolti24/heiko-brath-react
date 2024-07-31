@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react'
 
 export default function NavBar() {
+
+    const [sideBarActiveVar, setSideBarActiveVar] = useState(false);
+    function hamburgerHandler(){
+        sideBarActiveVar ? setSideBarActiveVar(false) : setSideBarActiveVar(true);
+        console.log(sideBarActiveVar)
+    }
+
   return (
         <>
-        <div className='hamburgerIcon'>
+        <div className={sideBarActiveVar ? 'hamburgerIcon SBAHamburgerIcon' : 'hamburgerIcon'} onClick={hamburgerHandler}>
             <Hamburger />
         </div>
         <div className="navBarContainer">
@@ -37,6 +44,18 @@ export default function NavBar() {
                     <img src={require('../images/clockVector.png')} alt="" className="clockVector" />
                     <div className="DisapearOnMobile"><span className="OpentimeSpan">Opentime:   </span>  Di. - Fr.: 07:00-13:00  und 15:00-18:30.    Sa.:	 07:30	-	12:30</div>
                 </div>
+            </div>
+        </div>
+        <div className={sideBarActiveVar===true ? 'sideBar sideBarActive' : 'sideBar'}>
+            <div className="sideBarOptions">
+                <div className="sideBarOption">Die Metzgerei</div>
+                <div className="sideBarOption">Dry Aged</div>
+                <div className="sideBarOption">Fleischversand</div>
+                <div className="sideBarOption">Events/Kurse</div>
+                <div className="sideBarOption">Partyservice</div>
+                <div className="sideBarOption">Tagesessen</div>
+                <div className="sideBarOption">Impressum</div>
+                <div className="sideBarOption">Kontakt</div>
             </div>
         </div>
     </>

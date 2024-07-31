@@ -88,13 +88,42 @@
 
 .hamburgerIcon{
     position: fixed;
-    width: 20px;
-    height: 20px;
     top: 12px;
-    right: 70px;
-    z-index: 5;
+    right: 40px;
+    z-index: 25;
     display: none;
 }
+.SBAHamburgerIcon{
+    display: block;
+}
+
+
+.sideBar{
+    position: fixed;
+    width: 300px;
+    right: -300px;
+    height: 100vh;
+    background: style.$brandPrimary;
+    z-index: 10;
+    overflow: auto;
+    transition: 0.5s;
+}
+.sideBarActive {
+    right: 0px;
+}
+.sideBarOptions{
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 70px;
+}
+.sideBarOption{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 44.53px;
+}
+
 
 
 @media only screen and (max-width: 1200px) {
