@@ -11,6 +11,7 @@ import './styles/spicesSection.scss';
 import './styles/deliverySection.scss';
 import './styles/recordSection.scss';
 import './styles/footer.scss';
+import './styles/popUp.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
