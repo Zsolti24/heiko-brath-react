@@ -6,6 +6,7 @@ import './styles/navBar.scss';
 import './styles/imageSliderSection.scss';
 import './styles/descriptionSection.scss';
 import './styles/reservationSection.scss';
+import './styles/productSection.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
