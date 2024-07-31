@@ -6,6 +6,8 @@ import ReservationSection from "./sections/ReservationSection.js";
 import ProductSection from "./sections/ProductSection.js";
 import SpicesSection from "./sections/SpicesSection.js";
 import DeliverySection from "./sections/DeliverySection.js";
+import RecordSection from "./sections/RecordSection.js";
+import Footer from "./components/Footer.js";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
     <ProductSection />
     <SpicesSection />
     <DeliverySection />
+    <RecordSection />
+    <Footer />
   </>
   )
 }

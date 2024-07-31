@@ -9,6 +9,8 @@ import './styles/reservationSection.scss';
 import './styles/productSection.scss';
 import './styles/spicesSection.scss';
 import './styles/deliverySection.scss';
+import './styles/recordSection.scss';
+import './styles/footer.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
