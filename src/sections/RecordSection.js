@@ -27,33 +27,35 @@ export default function RecordSection() {
             </div>
             <div className="Medals">
                 <div className="medalText">Auszeichnungen</div>
-                <div className="medalComponent">
-                    <div className="medalImageHolder">
-                        <img src={require("../images/nagrada1.png")} alt="" />
+                <div className='medalComponentContainer'>
+                    <div className="medalComponent">
+                        <div className="medalImageHolder">
+                            <img src={require("../images/nagrada1.png")} alt="" />
+                        </div>
+                        <div className="medalComponentText">Tollit argumentum genau
+                            Saepe lobortis</div>
+                    </div> 
+                    <div className="medalComponent">
+                        <div className="medalImageHolder">
+                            <img src={require("../images/nagrada2.png")} alt="" className="medalImg" />
+                        </div>
+                        <div className="medalComponentText">Schneewittchen
+                            denique</div>
                     </div>
-                    <div className="medalComponentText">Tollit argumentum genau
-                        Saepe lobortis</div>
-                </div> 
-                <div className="medalComponent">
-                    <div className="medalImageHolder">
-                        <img src={require("../images/nagrada2.png")} alt="" className="medalImg" />
+                    <div className="medalComponent">
+                        <div className="medalImageHolder">
+                        <img src={require("../images/nagrada3.png")} alt="" />
                     </div>
-                    <div className="medalComponentText">Schneewittchen
-                        denique</div>
-                </div>
-                <div className="medalComponent">
-                    <div className="medalImageHolder">
-                    <img src={require("../images/nagrada3.png")} alt="" />
-                </div>
-                    <div className="medalComponentText">Grimms Märchen 
-                        expetenda</div>
-                </div>
-                <div className="medalComponent">
-                    <div className="medalImageHolder">
-                        <img src={require("../images/nagrada4.png")} alt="" />
+                        <div className="medalComponentText">Grimms Märchen 
+                            expetenda</div>
                     </div>
-                    <div className="medalComponentText">Mettwurst mei 
-                        ullum gloriatur.</div>
+                    <div className="medalComponent">
+                        <div className="medalImageHolder">
+                            <img src={require("../images/nagrada4.png")} alt="" />
+                        </div>
+                        <div className="medalComponentText">Mettwurst mei 
+                            ullum gloriatur.</div>
+                    </div>
                 </div>
             </div>
             <div className="imgContainerVonal">
@@ -147,8 +149,8 @@ export default function RecordSection() {
                     </div>
                 </div>
             </div>
-            <div class="buttonContainer">
-            <div class="rdButton">Alle Berichte</div>
+            <div className="buttonContainer">
+            <div className="rdButton">Alle Berichte</div>
         </div>
         </div>
     </div>
